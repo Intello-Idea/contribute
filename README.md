@@ -2,8 +2,7 @@
 Flujo de trabajo para contribuir a los proyectos de Intello Idea.
 
 **1.** Replique el repositorio remoto de Intello Idea en su cuenta individual.
-Desde la pagina web del provedor del repositorio remoto, seleccione **_fork_**. 
-Ahora podra ver este repositorio en su cuenta.
+Desde la pagina web del provedor del repositorio remoto (**GitHub** o **Bitbucket**), seleccione **_fork_**. 
 
 
 **2.** Clonar el repositorio para tenerlo localmente.
