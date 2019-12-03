@@ -1,54 +1,64 @@
-# contribute
+# Contribute to Intello Idea
 Flujo de trabajo para contribuir a los proyectos de Intello Idea.
 
-**1.** Clonar el repositorio para tenerlo localmente.
+**1.** Replique el repositorio remoto de Intello Idea en su cuenta individual.
+Desde la pagina web del provedor del repositorio remoto, seleccione **_fork_**. 
+Ahora podra ver este repositorio en su cuenta.
+
+
+**2.** Clonar el repositorio para tenerlo localmente.
 ```
 git clone <repository_url>
 ```
 
-**2.** Seleccionar la rama principal de desarrollo.
-```
-git checkout <rama>
-```
 
-**3.** Actualizar el repositorio local.
+**3.** Sincronice el repositorio local con el remoto.
 ```
+git fetch
 git pull
 ```
 
-**4.** Crear una rama para trabajar en una nueva tarea.
+
+**4.** Localmente, cree una rama para trabajar en una nueva tarea.
 ```
 git branch task#<numero_de_tarea>
 ```
 
-**5.** Seleccionar la rama recien creada para trabajar sobre esta.
+
+**5.** Seleccione la rama recien creada para trabajar sobre esta.
 ``` 
 git checkout task#<numero_de_tarea>
 ```
 
+
 **6.** Realizar el trabajo necesario
 
-**7.** Hacer **commit** al trabajo realizado.
+
+**7.** Adicione el trabajo realizado al versionamiento de _Git_ en la rama del repositorio local.
+```
+git add .
+```
+
+
+**8.** Haga **_commit_** localmente de todos los cambios realizados.
 ```
 git commit -m "<mensaje_del_commit>"
 ```
 
-**8.** Actualizar el repositorio local.
-```
-git fetch
-```
 
-**9.** Unir localmente la rama de trabajo con la rama principal de desarrollo.
+**9.** Una la rama de trabajo con la rama principal de desarrollo en el repositorio **local**.
 ```
 git merge <rama>
 ```
 
-**10.** Actualizar el repositorio remoto con los cambios anteriores.
+
+**10.** Haga un **_push_** para subir los cambios locales al repositorio que esta en su cuenta individual.
 ```
 git push
 ```
 
-**11.** Hacer un **pull** **request** desde la rama de la nueva tarea hacia la rama principal de desarrollo.
-Escribir en el comentario del **pull** **request** la descripcion de la tarea y su identificacion. "Task#<numero_de_tarea>"
+
+**11.** Solicite un **_pull_** **_request_** desde el repositorio de su cuenta individual hacia el repositorio de Intello Idea.
+Escribir en el comentario la descripcion de la tarea y su identificacion. "Task#<numero_de_tarea>"
 Esta accion se realiza desde la pagina web del repositorio remoto.
 
